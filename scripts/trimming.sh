@@ -88,8 +88,8 @@ else
 
         ${TRIM_GALORE_PATH}/trim_galore -j 4 -o $output_dir  ${fastqs[0]} ${fastqs[1]} --paired --gzip --path_to_cutadapt ${CUTADAPT_PATH}/cutadapt
 
-        mv $trimmed_fastq1 ${OUTPUT_DIR}/trimmed_fastq/${OUTPUT_PREFIX}.trimmed.demplxed.PE1.fastq.gz
-        mv $trimmed_fastq2 ${OUTPUT_DIR}/trimmed_fastq/${OUTPUT_PREFIX}.trimmed.demplxed.PE2.fastq.gz
+        #mv $trimmed_fastq1 ${OUTPUT_DIR}/trimmed_fastq/${OUTPUT_PREFIX}.trimmed.demplxed.PE1.fastq.gz
+        #mv $trimmed_fastq2 ${OUTPUT_DIR}/trimmed_fastq/${OUTPUT_PREFIX}.trimmed.demplxed.PE2.fastq.gz
         echo "Trimming Done!" 
     else
         echo "You have not specify TRIM_METHOD, so I do not trim the reads"
